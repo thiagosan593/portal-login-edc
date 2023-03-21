@@ -9,7 +9,7 @@
 html,
 body {
     height: auto;
-    min-height: 90vh;
+    min-height: 92vh;
 
 }
 
@@ -149,6 +149,7 @@ input:focus {
 
 #liks-container {
      margin: .6rem 0;
+     text-align: center;
 }
 #liks-container a {
     text-decoration: none;
@@ -167,8 +168,10 @@ input:focus {
 
 @media screen and (max-width: 800px) {
 
-    #register-banner img {
-        width: 400px;
+
+    #banner-layer img {
+        display: flex;
+       
     }
     #liks-container a{
         padding: 0 .2rem;
@@ -176,13 +179,22 @@ input:focus {
 
 
     #register-container {
-        box-shadow: none
+        box-shadow: none;
+        margin: 0;
+    }
+    #form-info{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    #form-info em{
+        display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
 
-
+    html{
+     background: #fdfdfd;
+    }
 
     #register-container {
         display: block;
@@ -199,14 +211,14 @@ input:focus {
         background-size: cover;
         background-position: center bottom;
         width: 60%;
-        height: 30vh;
+        height: 35vh;
     }
 
     #register-form,
     #register-banner {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        box-shadow: none
+        box-shadow: none;
     }
 
     #register-form h2 {
