@@ -38,7 +38,7 @@ input:focus {
 }
 
 #banner-layer {
-    background-color: rgba(102, 146, 133, 0.466);
+    background-color: rgba(102, 146, 133, 0.822);
     height: 100%;
     padding: 2rem;
     /* display: flex; */
@@ -53,7 +53,6 @@ input:focus {
 
 #register-banner img {
     width: 400px;
-    display: flex;
     margin-top: .2rem;
 }
 
@@ -148,9 +147,10 @@ input:focus {
 }
 
 #liks-container {
-     margin: .6rem 0;
-     text-align: center;
+    margin: .6rem 0;
+    text-align: center;
 }
+
 #liks-container a {
     text-decoration: none;
     font-size: .6rem;
@@ -162,8 +162,14 @@ input:focus {
 #liks-container a:nth-child(1) {
     border: none;
 }
-#liks-container a:hover{
+
+#liks-container a:hover {
     text-decoration: underline;
+}
+@media screen and (max-width: 840px) {
+    #banner-layer img {
+        width: 350px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -171,9 +177,10 @@ input:focus {
 
     #banner-layer img {
         display: flex;
-       
+
     }
-    #liks-container a{
+
+    #liks-container a {
         padding: 0 .2rem;
     }
 
@@ -182,18 +189,20 @@ input:focus {
         box-shadow: none;
         margin: 0;
     }
-    #form-info{
+
+    #form-info {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    #form-info em{
+
+    #form-info em {
         display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
 
-    html{
-     background: #fdfdfd;
+    html {
+        background: #fdfdfd;
     }
 
     #register-container {
@@ -202,7 +211,7 @@ input:focus {
 
     #banner-layer img {
         width: 300px;
-        margin: .6em auto;
+        margin: 2.6em auto;
         box-sizing: border-box;
 
     }
@@ -240,5 +249,18 @@ input:focus {
         align-items: center;
         text-align: center;
         width: 180px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    #register-banner{
+        height: 25vh;
+    }
+    #banner-layer img {
+        width: 260px;
+        margin: 0.6em auto;
+    }
+    #register-form {
+        padding: 2em 1.2em;
     }
 }
