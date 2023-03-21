@@ -1,0 +1,232 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+html,
+body {
+    height: auto;
+    min-height: 90vh;
+
+}
+
+html {
+    background: linear-gradient(180deg, #093e83 0%, #174e39 100%);
+}
+
+input:focus {
+    outline: none;
+}
+
+#register-container {
+    max-width: 900px;
+    min-height: 60vh;
+    margin: 4em auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+#register-banner {
+    background: url(../img/bg-form.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#banner-layer {
+    background-color: rgba(102, 146, 133, 0.466);
+    height: 100%;
+    padding: 2rem;
+    /* display: flex; */
+    align-items: center;
+}
+
+#register-banner h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+#register-banner img {
+    width: 400px;
+    display: flex;
+    margin-top: .2rem;
+}
+
+#register-form {
+    background-color: #fdfdfd;
+    padding: 2rem 4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#register-form h2 {
+    margin-top: .2rem;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #1B3B72;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+
+#form-info {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    text-align: center;
+    align-items: center;
+}
+
+.icon-box {
+    flex-basis: 33%;
+    flex-shrink: 2;
+    flex-grow: 1;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.icon-box i {
+    width: 20px;
+    height: 30px;
+    font-size: 1.5em;
+    display: block;
+    margin: 0 auto;
+    opacity: .5;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-box em {
+    font-size: .6rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-control label {
+
+    font-weight: bolder;
+    margin-bottom: .6rem;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1.2px solid #aaa;
+    padding: 0.6rem 0;
+}
+
+.form-control input:focus {
+    border-bottom: 1.2px solid #66928577;
+}
+
+#register-form input[type=submit] {
+    background-color: #1b6494;
+    color: #fff;
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#register-form input[type=submit]:hover {
+    opacity: 1;
+}
+
+#liks-container {
+     margin: .6rem 0;
+}
+#liks-container a {
+    text-decoration: none;
+    font-size: .6rem;
+    padding: 0 1rem;
+    margin: 3rem 0;
+    border-left: 1px solid black;
+}
+
+#liks-container a:nth-child(1) {
+    border: none;
+}
+#liks-container a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+
+    #register-banner img {
+        width: 400px;
+    }
+    #liks-container a{
+        padding: 0 .2rem;
+    }
+
+
+    #register-container {
+        box-shadow: none
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+    #register-container {
+        display: block;
+    }
+
+    #banner-layer img {
+        width: 300px;
+        margin: .6em auto;
+        box-sizing: border-box;
+
+    }
+
+    #register-banner {
+        background-size: cover;
+        background-position: center bottom;
+        width: 60%;
+        height: 30vh;
+    }
+
+    #register-form,
+    #register-banner {
+        width: 90%;
+        margin: 0 auto;
+        box-shadow: none
+    }
+
+    #register-form h2 {
+        font-size: 1.8rem;
+    }
+
+    #register-form input[type=submit] {
+        width: 100%;
+    }
+
+    #banner-layer-mobile {
+        background-color: #1b6494;
+        width: 100%;
+        display: contents;
+
+    }
+
+    #banner-layer-mobile img {
+        align-items: center;
+        text-align: center;
+        width: 180px;
+    }
+}
