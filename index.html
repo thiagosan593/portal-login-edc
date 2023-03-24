@@ -13,6 +13,8 @@
     <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="js/script.js" defer></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -20,53 +22,66 @@
         <div id="register-banner">
             <div id="banner-layer">
                 <img src="img/UNICT-logo-fs.png" alt="UNICT-logo">
-                
+
             </div>
         </div>
         <div id="register-form">
             <h2>Portal
                 do Estudante</h2>
-            <div id="form-info">
-                <div class="icon-box">
-                    <i class="bi bi-arrow-left-right"></i>
-                    <em>Rematricula</em>
+            <div id="container-current-student" class="">
+                <div id="form-info">
+                    <div class="icon-box">
+                        <i class="bi bi-arrow-left-right"></i>
+                        <em>Rematricula</em>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bi bi-pencil-square"></i>
+                        <em>Notas e Faltas</em>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bi bi-cash-stack"></i>
+                        <em>2ª via Boleto</em>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bi bi-display"></i>
+                        <em>Contéudo Online</em>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bi bi-briefcase"></i>
+                        <em>Estágio e Emprego</em>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bi bi-book-half"></i>
+                        <em>Bíblioteca</em>
+                    </div>
                 </div>
-                <div class="icon-box">
-                    <i class="bi bi-pencil-square"></i>
-                    <em>Notas e Faltas</em>
+                <div class="form-control">
+                    <input type="text" name="ra" id="ra" placeholder="RA:">
+                    <label for="ra"></label>
                 </div>
-                <div class="icon-box">
-                    <i class="bi bi-cash-stack"></i>
-                    <em>2ª via Boleto</em>
+                <div class="form-control">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="Senha:">
                 </div>
-
-                <div class="icon-box">
-                    <i class="bi bi-display"></i>
-                    <em>Contéudo Online</em>
+                <input type="submit" value="Entrar">
+                <div id="liks-container">
+                    <a href="#">Esqueci minha senha</a>
+                    <a href="#">Pré-matrícula</a>
+                    <a href="#" id="exAluno" >Ex-aluno</a>
                 </div>
-                <div class="icon-box">
-                    <i class="bi bi-briefcase"></i>
-                    <em>Estágio e Emprego</em>
-                </div>
-                <div class="icon-box">
-                    <i class="bi bi-book-half"></i>
-                    <em>Bíblioteca</em>
-                </div>
-
             </div>
-            <div class="form-control">
-                <input type="email" name="email" id="email" placeholder="RA:">
-                <label for="email"></label>
-            </div>
-            <div class="form-control">
-                <label for="password"></label>
-                <input type="password" name="password" id="password" placeholder="Senha:">
-            </div>
-            <input type="submit" value="Entrar">
-            <div id="liks-container">
-                <a href="#">Esqueci minha senha</a>
-                <a href="#">Pré-matrícula</a>
-                <a href="#">Ex-aluno</a>
+            <div id="container-former-student" class="hide">
+                <h4>Ex-Aluno</h4>
+                <div class="form-control">
+                    <input type="ra" name="ra" id="ra" placeholder="RA:">
+                    <label for="ra"></label>
+                </div>
+                <div class="form-control">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="Senha:">
+                    <input type="submit" value="Entrar">
+                    <a href="#" id="voltar">voltar</a>
+                </div>
             </div>
         </div>
     </div>
