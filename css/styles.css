@@ -140,6 +140,7 @@ input:focus {
     padding: 1rem 1.4rem;
     cursor: pointer;
     transition: .4s;
+    width: 100%;
 }
 
 #register-form input[type=submit]:hover {
@@ -166,6 +167,19 @@ input:focus {
 #liks-container a:hover {
     text-decoration: underline;
 }
+
+#container-former-student {
+    margin-top: 5em;
+}
+
+#container-former-student input {
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
 @media screen and (max-width: 840px) {
     #banner-layer img {
         width: 350px;
@@ -252,14 +266,16 @@ input:focus {
     }
 }
 
-@media screen and (max-width: 370px){
-    #register-banner{
+@media screen and (max-width: 370px) {
+    #register-banner {
         height: 25vh;
     }
+
     #banner-layer img {
         width: 260px;
         margin: 0.6em auto;
     }
+
     #register-form {
         padding: 2em 1.2em;
     }
