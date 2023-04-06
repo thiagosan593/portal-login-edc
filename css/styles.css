@@ -23,7 +23,7 @@ input:focus {
 
 #register-container {
     max-width: 900px;
-    min-height: 60vh;
+    min-height: 80vh;
     margin: 4em auto;
     display: flex;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -167,9 +167,12 @@ input:focus {
 #liks-container a:hover {
     text-decoration: underline;
 }
-
+#container-former-student h4{
+     padding-bottom: .7rem;
+}
 #container-former-student {
-    margin-top: 5em;
+    margin-top: 4em;
+
 }
 
 #container-former-student input {
